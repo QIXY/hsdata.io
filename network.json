@@ -1,0 +1,497 @@
+{
+    "nodes": [
+      {
+        "id": "0",
+        "name": "CRH1A",
+        "symbolSize": 30,
+        "x": -260,
+        "y": -280,
+        "value": "250km/h",
+        "category": 2
+      },
+      {
+        "id": "1",
+        "name": "CRH1E",
+        "symbolSize": 10,
+        "x": -250,
+        "y": -280,
+        "value": "250km/h",
+        "category": 2
+      },
+      {
+        "id": "2",
+        "name": "CRH1B",
+        "symbolSize": 10,
+        "x": -250,
+        "y": -270,
+        "value": "250km/h",
+        "category": 2
+      },
+      {
+        "id": "3",
+        "name": "CRH380D",
+        "symbolSize": 10,
+        "x": -250,
+        "y": -270,
+        "value": "310km/h",
+        "category": 1
+      },
+      {
+        "id": "4",
+        "name": "CRH1A-A",
+        "symbolSize": 10,
+        "x": -250,
+        "y": -270,
+        "value": "250km/h",
+        "category": 2
+      },
+      {
+        "id": "5",
+        "name": "新CRH1E",
+        "symbolSize": 10,
+        "x": -250,
+        "y": -270,
+        "value": "250km/h",
+        "category": 2
+      },
+      {
+        "id": "6",
+        "name": "CRH2A",
+        "symbolSize": 40,
+        "x": -250,
+        "y": -270,
+        "value": "250km/h",
+        "category": 2
+      },
+      {
+        "id": "7",
+        "name": "CRH2B",
+        "symbolSize": 10,
+        "x": -250,
+        "y": -270,
+        "value": "250km/h",
+        "category": 2
+      },
+      {
+        "id": "8",
+        "name": "CRH2E",
+        "symbolSize": 10,
+        "x": -250,
+        "y": -270,
+        "value": "250km/h",
+        "category": 2
+      },
+      {
+        "id": "9",
+        "name": "新CRH2E",
+        "symbolSize": 10,
+        "x": -250,
+        "y": -270,
+        "value": "250km/h",
+        "category": 2
+      },
+      {
+        "id": "10",
+        "name": "纵列式CRH2E",
+        "symbolSize": 10,
+        "x": -250,
+        "y": -270,
+        "value": "250km/h",
+        "category": 2
+      },
+      {
+        "id": "11",
+        "name": "CRH2G",
+        "symbolSize": 10,
+        "x": -250,
+        "y": -270,
+        "value": "250km/h",
+        "category": 2
+      },
+      {
+        "id": "12",
+        "name": "CRH2C",
+        "symbolSize": 10,
+        "x": -250,
+        "y": -270,
+        "value": "310km/h",
+        "category": 1
+      },
+      {
+        "id": "13",
+        "name": "CRH380A",
+        "symbolSize": 10,
+        "x": -250,
+        "y": -270,
+        "value": "310km/h",
+        "category": 1
+      },
+      {
+        "id": "14",
+        "name": "CRH380AL",
+        "symbolSize": 10,
+        "x": -250,
+        "y": -270,
+        "value": "310km/h",
+        "category": 1
+      },
+      {
+        "id": "15",
+        "name": "CRH6A",
+        "symbolSize": 20,
+        "x": -250,
+        "y": -270,
+        "value": "200km/h",
+        "category": 3
+      },
+      {
+        "id": "16",
+        "name": "CRH6A-A",
+        "symbolSize": 10,
+        "x": -250,
+        "y": -270,
+        "value": "200km/h",
+        "category": 3
+      },
+      {
+        "id": "17",
+        "name": "CRH6F",
+        "symbolSize": 10,
+        "x": -250,
+        "y": -270,
+        "value": "160km/h",
+        "category": 4
+      },
+      {
+        "id": "18",
+        "name": "CRH6F-A",
+        "symbolSize": 10,
+        "x": -250,
+        "y": -270,
+        "value": "160km/h",
+        "category": 4
+      },
+      {
+        "id": "19",
+        "name": "CRH5A",
+        "symbolSize": 30,
+        "x": -250,
+        "y": -270,
+        "value": "250km/h",
+        "category": 2
+      },
+      {
+        "id": "20",
+        "name": "CRH5J",
+        "symbolSize": 10,
+        "x": -250,
+        "y": -270,
+        "value": "250km/h",
+        "category": 2
+      },
+      {
+        "id": "21",
+        "name": "CRH5G",
+        "symbolSize": 20,
+        "x": -250,
+        "y": -270,
+        "value": "250km/h",
+        "category": 2
+      },
+      {
+        "id": "22",
+        "name": "CRH5E",
+        "symbolSize": 10,
+        "x": -250,
+        "y": -270,
+        "value": "250km/h",
+        "category": 2
+      },
+      {
+        "id": "23",
+        "name": "CRH5G技术提升型",
+        "symbolSize": 10,
+        "x": -250,
+        "y": -270,
+        "value": "250km/h",
+        "category": 2
+      },
+      {
+        "id": "24",
+        "name": "CRH3C",
+        "symbolSize": 30,
+        "x": -250,
+        "y": -270,
+        "value": "310km/h",
+        "category": 1
+      },
+      {
+        "id": "25",
+        "name": "CRH380BL",
+        "symbolSize": 20,
+        "x": -250,
+        "y": -270,
+        "value": "310km/h",
+        "category": 1
+      },
+      {
+        "id": "26",
+        "name": "CRH380B",
+        "symbolSize": 10,
+        "x": -250,
+        "y": -270,
+        "value": "310km/h",
+        "category": 1
+      },
+      {
+        "id": "27",
+        "name": "CRH3A",
+        "symbolSize": 10,
+        "x": -250,
+        "y": -270,
+        "value": "250km/h",
+        "category": 2
+      },
+      {
+        "id": "28",
+        "name": "CRH3A-A",
+        "symbolSize": 10,
+        "x": -250,
+        "y": -270,
+        "value": "200km/h",
+        "category": 3
+      },
+      {
+        "id": "29",
+        "name": "CRH380BG",
+        "symbolSize": 10,
+        "x": -250,
+        "y": -270,
+        "value": "310km/h",
+        "category": 1
+      },
+      {
+        "id": "30",
+        "name": "CRH380CL",
+        "symbolSize": 10,
+        "x": -250,
+        "y": -270,
+        "value": "310km/h",
+        "category": 1
+      },
+      {
+        "id": "31",
+        "name": "CR400AF",
+        "symbolSize": 60,
+        "x": -250,
+        "y": -270,
+        "value": "350km/h",
+        "category": 0
+      },
+      {
+        "id": "32",
+        "name": "CR300AF",
+        "symbolSize": 10,
+        "x": -250,
+        "y": -270,
+        "value": "250km/h",
+        "category": 2
+      },
+      {
+        "id": "33",
+        "name": "CR400AF-G",
+        "symbolSize": 10,
+        "x": -250,
+        "y": -270,
+        "value": "350km/h",
+        "category": 0
+      },
+      {
+        "id": "34",
+        "name": "CR400AF-C",
+        "symbolSize": 20,
+        "x": -250,
+        "y": -270,
+        "value": "350km/h",
+        "category": 0
+      },
+      {
+        "id": "35",
+        "name": "CR400AF-Z",
+        "symbolSize": 10,
+        "x": -250,
+        "y": -270,
+        "value": "350km/h",
+        "category": 0
+      },
+      {
+        "id": "36",
+        "name": "CR400AF-BZ",
+        "symbolSize": 10,
+        "x": -250,
+        "y": -270,
+        "value": "350km/h",
+        "category": 0
+      },
+      {
+        "id": "37",
+        "name": "CR400AF-A",
+        "symbolSize": 10,
+        "x": -250,
+        "y": -270,
+        "value": "350km/h",
+        "category": 0
+      },
+      {
+        "id": "38",
+        "name": "CR400AF-B",
+        "symbolSize": 10,
+        "x": -250,
+        "y": -270,
+        "value": "350km/h",
+        "category": 0
+      },
+      {
+        "id": "39",
+        "name": "CR400BF",
+        "symbolSize": 70,
+        "x": -250,
+        "y": -270,
+        "value": "350km/h",
+        "category": 0
+      },
+      {
+        "id": "40",
+        "name": "CR400BF-A",
+        "symbolSize": 10,
+        "x": -250,
+        "y": -270,
+        "value": "350km/h",
+        "category": 0
+      },
+      {
+        "id": "41",
+        "name": "CR400BF-B",
+        "symbolSize": 10,
+        "x": -250,
+        "y": -270,
+        "value": "350km/h",
+        "category": 0
+      },
+      {
+        "id": "42",
+        "name": "CR400BF-C",
+        "symbolSize": 30,
+        "x": -250,
+        "y": -270,
+        "value": "350km/h",
+        "category": 0
+      },
+      {
+        "id": "43",
+        "name": "CR400BF-Z",
+        "symbolSize": 10,
+        "x": -250,
+        "y": -270,
+        "value": "350km/h",
+        "category": 0
+      },
+      {
+        "id": "44",
+        "name": "CR400BF-GZ",
+        "symbolSize": 10,
+        "x": -250,
+        "y": -270,
+        "value": "350km/h",
+        "category": 0
+      },
+      {
+        "id": "45",
+        "name": "CR400BF-BZ",
+        "symbolSize": 10,
+        "x": -250,
+        "y": -270,
+        "value": "350km/h",
+        "category": 0
+      },
+      {
+        "id": "46",
+        "name": "CR400BF-G",
+        "symbolSize": 10,
+        "x": -250,
+        "y": -270,
+        "value": "350km/h",
+        "category": 0
+      },
+      {
+        "id": "47",
+        "name": "CR300BF",
+        "symbolSize": 10,
+        "x": -250,
+        "y": -270,
+        "value": "250km/h",
+        "category": 2
+      }
+    ],
+    "links": [
+{"source":"0","target":"1"},
+{"source":"0","target":"2"},
+{"source":"0","target":"3"},
+{"source":"3","target":"4"},
+{"source":"4","target":"5"},
+{"source":"6","target":"7"},
+{"source":"7","target":"8"},
+{"source":"8","target":"9"},
+{"source":"9","target":"10"},
+{"source":"6","target":"11"},
+{"source":"6","target":"12"},
+{"source":"12","target":"13"},
+{"source":"13","target":"14"},
+{"source":"6","target":"15"},
+{"source":"15","target":"16"},
+{"source":"15","target":"17"},
+{"source":"17","target":"18"},
+{"source":"19","target":"20"},
+{"source":"19","target":"21"},
+{"source":"21","target":"22"},
+{"source":"21","target":"23"},
+{"source":"24","target":"25"},
+{"source":"25","target":"26"},
+{"source":"26","target":"27"},
+{"source":"27","target":"28"},
+{"source":"25","target":"29"},
+{"source":"24","target":"30"},
+{"source":"31","target":"32"},
+{"source":"31","target":"33"},
+{"source":"31","target":"34"},
+{"source":"34","target":"35"},
+{"source":"34","target":"36"},
+{"source":"31","target":"37"},
+{"source":"31","target":"38"},
+{"source":"39","target":"40"},
+{"source":"39","target":"41"},
+{"source":"39","target":"42"},
+{"source":"42","target":"43"},
+{"source":"42","target":"44"},
+{"source":"42","target":"45"},
+{"source":"39","target":"46"},
+{"source":"39","target":"47"}
+],
+    "categories": [
+      {
+        "name": "350km/h"
+      },
+      {
+        "name": "310km/h"
+      },
+      {
+        "name": "250km/h"
+      },
+      {
+        "name": "200km/h"
+      },
+      {
+        "name": "160km/h"
+      }
+    ]
+  }
