@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>数说高铁</title>
+    <link href="favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/textures@1.2.0/dist/textures.js"></script>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script> -->
+    <script type="text/javascript" src="echarts.js"></script>
+    <script type="text/javascript" src="test/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="map_bar.js"></script>
+    <script type="text/javascript" src="scatter_bar.js"></script>
+    <script type="text/javascript" src="ecStat.min.js"></script>
+    <script type="text/javascript" src="line_regression.js"></script>
+    <script type="text/javascript" src="Germany_hsr.js"></script>
+    <script type="text/javascript" src="France_hsr.js"></script>
+    <script type="text/javascript" src="Spain_hsr.js"></script>
+    <script type="text/javascript" src="Itlay_hsr.js"></script>
+    <script type="text/javascript" src="UK_hsr.js"></script>
+    <script type="text/javascript" src="Japan_hsr.js"></script>
+    <script type="text/javascript" src="China_hsr.js"></script>
+    <script type="text/javascript" src="bar_stack.js"></script>
+    <script type="text/javascript" src="sankey.js"></script>
+    <script type="text/javascript" src="modelnetwork.js"></script>
+    <script type="text/javascript" src="modelpaopao.js"></script>
+    <script type="text/javascript" src="rader_time.js"></script>
+    <script type="text/javascript" src="train_pie.js"></script>
+
+</head>
+<body>
+
+    <img src="img/头图.png" style="width:100%;"></img>
+    </div>
+    <div style="clear: both; margin-bottom: 0px; color:white;font-size:20px">
+        <p>
+            <span style="font-size: 32px;">铁路</span> 是近代人类文明的象征，1964年10月1日，世界上第一条高速铁路——日本东海道新干线建成通车，0系高速列车同步诞生，从那时起，人类踏入了<a href="https://baike.baidu.com/item/%E9%AB%98%E9%80%9F%E9%93%81%E8%B7%AF/147658?fr=ge_ala";>高速铁路</a>的新时代。
+        </p>
+
+        <p>
+            在高速铁路发展的几十年中，各国的技术不断发展，新的高铁车型不断涌现，我们试图通过数据来反映世界高速铁路的发展情况。</a>
+        </p>
+
+        <h1>🚄🚄🚄世界高铁发展</h1>
+
+        <p>经过近60年的发展，全球已经有多个国家和地区拥有200km/h及以上运营速度的高速列车，高铁的开通和运行为世界多地人们的生活带来了快捷和便利，缩短了城市间时空的距离。<br>下面的雷达图中展示了高铁开通前后世界各地多个城市之间铁路运行时长的变化。</p>
+        <div class="graphlayout_m">
+            <div id="rader_time" style="text-align: center; padding-left:2%;width:95%;height:100%; "></div>
+            <div id="handle_rader_time" style="text-align: center;">
+            </div>
+        </div>
+        <p></p>
+        <p>高速铁路作为一种安全可靠、运载量大、低碳环保的运输方式，已经成为世界铁路发展的重要趋势。<br>据国际铁路联盟(UIC)数据显示，截至2021年底，我国高铁里程达4万余公里，居世界首位。</p>
+        <div class="graphlayout_m">
+            <div id="map_bar" style="text-align: center; padding-left:4%;width:85%;height:100%; "></div>
+            <div id="handle_map_bar" style="text-align: center;">
+            </div>
+        </div>
+
+        <p>
+            在高速铁路发展过程中，承载着人类智慧与文化特色的高铁车型在各国不断涌现。各国高铁动车组数量占比如下，其中，中国的高铁动车组数量最多，占半数以上。
+        </p>
+        <div class="graphlayout">
+            <div id="train_pie" style="text-align: center; padding-left:4%;width:90%;height:100%; "></div>
+            <div id="handle_train_pie" style="text-align: center;">
+            </div>
+        </div>
+
+        <p>
+            不同高铁车型有着不同的运营速度和定员人数，对各国高铁车型对应的运营速度和定员人数数据进行分析，可以看出运营速度均在200km/h以上，我国与日本的车型定员人数较大，体现出高铁是两国的主要交通方式之一。 </p>
+        <div class="graphlayout">
+            <div id="scatter_bar" style="text-align: center; width:90%;height:90%; "></div>
+            <div id="handle_scatter_bar" style="text-align: center;">
+            </div>
+        </div>
+
+        <p>通常情况下，定员人数越大的车型需要的牵引功率越大，对不同高速铁路车型的牵引功率和定员人数进行线性回归可视分析，可以看出两者线性正相关。
+        </p>
+        <div class="graphlayout">
+            <div id="line_regression" style="text-align: center; width:90%;height:90%; "></div>
+            <div id="handle_line_regression" style="text-align: center;">
+            </div>
+        </div>
+        <p>重点看看车型数大于5的7个国家,用气泡的大小代表不同国家在某一年投入运营的新车型数量的多少。<br>可看出在高速铁路技术发展过程中，中国相对起步较晚，最近几年发展较快。
+        </p>
+        <div class="graphlayout">
+            <div id="modelpaopao" style="text-align: center; padding-left:7%; width:85%;height:100%; "></div>
+            <div id="handle_modelpaopao" style="text-align: center;">
+            </div>
+        </div>
+
+
+
+        <p>以时间为横轴，运营时速为纵轴，高铁车型的不断涌现代表着人类社会科学技术的不断进步与发展。</p>
+        <p>其中，德国的高铁车型涂装颜色最统一。<br>目前，德国已经建成高速铁路新线超过1200km。除高速新线以外，柏林-汉堡、汉堡-汉诺威、汉堡-不莱梅-多特蒙德、汉诺威-多特蒙德、慕尼黑-奥格斯堡等多条既有干线铁路均已提速至200km/h，与新建高速铁路共同形成德国多中心的快速铁路网。<br>除国内运行的ICE高速列车外，TGV、Thalys、Railjet和ETR610等周边国家的高速列车也会跨境驶入德国高速铁路网。ICE高速列车则会驶入法国、比利时、荷兰、瑞士与奥地利等周边国家，提供泛欧高速列车服务。</p>
+        <div class="graphlayout">
+            <div id="Germany_hsr" style="text-align: center;padding-left:10%; width:70%;height:95%; "></div>
+            <div id="handle_Germany_hsr" style="text-align: center;">
+            </div>
+        </div>
+        <p>法国的高铁车型平均运营速度最高。<br>目前，法国11条LGV高速铁路组成的高速路网总里程已经超过2500km，形成以巴黎为中心、辐射法国各城市及周边国家的高速铁路骨干网络，并继续建设拓展。新建线路最高运营速度也从260km/h逐步提高到320km/h，是欧洲运营速度最快的高速铁路。</p>
+        <div class="graphlayout">
+            <div id="France_hsr" style="text-align: center;padding-left:7%; width:80%;height:95%; "></div>
+            <div id="handle_France_hsr" style="text-align: center;">
+            </div>
+        </div>
+        <p>西班牙的高铁车型谱系最清晰。<br>自1992年马德里-塞维利亚高速铁路开通以来，以AVE、Avant、Alvia为运行品牌的西班牙高速铁路经过多年建设，建成通车的新建高速铁路里程已经超过3000km，是欧洲规模最大，在世界范围内仅次于中国的第二大高速铁路网。</p>
+        <div class="graphlayout">
+            <div id="Spain_hsr" style="text-align: center;padding-left:10%; width:75%;height:95%; "></div>
+            <div id="handle_Spain_hsr" style="text-align: center;">
+            </div>
+        </div>
+        <p>意大利的高铁车型造型最多变。<br>受日本新干线开通的震动，早在1966年，意大利便出台了高速铁路的修建计划，是欧洲最早提出高速铁路意向的国家。1970年，罗马-佛罗伦萨高速铁路开通，意大利成为继日本之后第二个开工建设高速铁路的国家，实现了欧洲高速铁路建设零的突破。但也许由于意大利人随遇而安的天性，254km的高速线路竟然一直修了20多年，直到1992年才全线完工。<br>虽然发展历经波折，但意大利高铁近年来发展迅速，已建成超过1000km的高速铁路网，形成最高速度250km/h的Pendolino系列摆式列车和最高速度300km/h的非摆式列车两大体系，分别适应不同线路的运营需求。</p>
+        <div class="graphlayout">
+            <div id="Itlay_hsr" style="text-align: center;padding-left:10%; width:75%;height:95%; "></div>
+            <div id="handle_Itlay_hsr" style="text-align: center;">
+            </div>
+        </div>
+        <p>英国的高铁车型编号最统一。<br>英国是世界铁路的诞生地。在20世纪60年代开始的铁路高速化进程中，英国没有采用新建高速铁路的方式，而是将重点放在了将既有铁路提速至200km/h及以上。相比于欧洲大陆上大规模修建高速铁路的法国、德国、意大利和西班牙等国家，作为世界铁路的诞生国，英国在高速铁路建设方面略显保守。</p>
+        <div class="graphlayout">
+            <div id="UK_hsr" style="text-align: center; padding-left:5%;width:85%;height:95%; "></div>
+            <div id="handle_UK_hsr" style="text-align: center;">
+            </div>
+        </div>
+        <p>日本的高铁车型历史最悠久。<br>1964年10月1日，东海道新干线建成通车，以210km/h的运行速度成为世界上第一条高速铁路，带领世界迈入了高速铁路的新时代。<br>作为世界上最早开通的高速铁路系统，新干线已成为日本高速铁路的名片。自1964年东海道新干线通车算起，历经大半个世纪的风霜雪雨，新干线高速列车虽然经过多次技术更迭，却始终保持着交流供电与动力分散的基本技术特点，成为世界高速铁路大家庭中极具特色的家族。</p>
+        <div class="graphlayout">
+            <div id="Japan_hsr" style="text-align: center; padding-left:2%;width:90%;height:95%; "></div>
+            <div id="handle_Janpan_hsr" style="text-align: center;">
+            </div>
+        </div>
+        <p>我国的高铁车型数量最多。<br>自2008年8月1日中国第一条350km/h的高速铁路————京津城际铁路开通运营以来，高速铁路在中国迅猛发展。按照国家中长期铁路网规划和铁路“十二五”、“十三五”、“十四五”规划，中国高速铁路网规划已由“四纵四横”快速客运网扩充为“八纵八横”高速铁路网主骨架。经过十余年的高速发展，中国高速铁路已建成通车里程超过4万km，占世界高速铁路通车总里程的四分之三，是世界上运营里程最长、在建规模最大、运营场景最丰富、商业运行速度最高的高速铁路网。</p>
+        <div class="graphlayout">
+            <div id="China_hsr" style="text-align: center; width:100%;height:95%; "></div>
+            <div id="handle_China_hsr" style="text-align: center;">
+            </div>
+        </div>
+        <h1>🚄🚄🚄中国高铁发展</h1>
+        <div style="padding-top: 0px; padding-bottom: 0px;">
+            <div style="display: inline-block; width:50%; padding-left:5%; text-align: center;vertical-align:top; color:grey; font-size:14px">
+                <img src="img/wordcloud.png" style="padding-top: 30px;width:100%;"></img>
+                中国高铁动车组车型词云
+            </div>
+            <div style="padding-top: 10px; display: inline-block; width:35%; padding-left:0%; vertical-align:left">
+                <p> </p>
+                <p>我们将运营速度160km/h的城际及市域动车组车型补充到数据中，对我国高铁动车组车型进行可视化词云展示。 <br>词云图中字体大小与车型定员人数相关联，字体越大的车型所对应的定员人数越多。</p></div>
+            <div style="clear:both"></div>
+        </div>
+        <p>将复兴号系列动车组、和谐号系列动车组、城际及市域动车组、香港特别行政区和台湾省高速动车组四个类别的车型逐年投入运行的数量用分类条形图进行可视化展示。<br>可以看出2017年之前，每年投入运行的车型以和谐号系列动车组为主，2018年以后，每年投入运行的车型以复兴号系列动车组为主。</p>
+        <div class="graphlayout">
+            <div id="bar_stack" style="text-align: center; width:90%;height:100%; "></div>
+            <div id="handle_bar_stack" style="text-align: center;">
+            </div>
+        </div>
+        <p>在运营速度和编组数量方面:<br>复兴号系列动车组运营速度以350km/h为主，编组数量以8编组为主；和谐号系列动车组运营速度以250km/h和310km/h为主，编组数量为8编组或16编组；城际及市域动车组运营速度以160km/h和200km/h为主，编组数量以4编组为主；港台地区高速动车组运营速度为310km/h和300km/h，编组数量为8编组和10编组。</p>
+        <div class="graphlayout">
+            <div id="sankey" style="padding-left:10%; width:90%;height:90%; "></div>
+            <div id="handle_sankey" style="text-align: center;">
+            </div>
+        </div>
+        <div style="padding-top: 0px; padding-bottom: 0px;">
+            <div style="display: inline-block; width:50%; padding-left:5%; text-align: center;vertical-align:top; color:grey; font-size:14px">
+                <img src="img/dingyuan.png" style="padding-top: 30px; width:100%;"></img>
+                不同类别高铁动车组的平均定员人数(单位:人)
+            </div>
+            <div style="padding-top: 10px; display: inline-block; width:35%; padding-left:0%; vertical-align:left">
+                <p>计算不同类别高铁动车组的平均定员人数，可以看出复兴号系列动车组的平均定员人数最高，为822人。<br>此外，虽然城际及市域动车组的编组以4编组为主，但由于这类动车组行程短，速度较低，定员人数中包括立席，所以这类动车组的平均定员人数比和谐号系列动车组的平均定员人数高一些。</p></div>
+            <div style="clear:both"></div>
+        </div>
+        <p>经过了“引进”、“消化”、“吸收”、“再创新”，中国高铁技术已实现完全自主知识产权和中国标准，打造出包含CRH1、CRH2、CRH3、CRH5、CRH6、CRH380A、CRH380B、CRH380C、CRH380D、CR400AF、CR400BF在内的多个系列不同车型、多种编组形式、座卧车齐全的高速动车组体系。<br>从中国铁路高速动车组技术发展谱系图中可以看出不同车型衍生与发展的关联关系，其中，谱系图中的圆点越大，代表由该车型衍生与发展出的车型数量越多。</p>
+        <div class="graphlayout_h">
+            <div id="modelnetwork" style="padding-left:10%; width:80%;height:100%; "></div>
+            <div id="handle_modelnetwork" style="text-align: center;">
+            </div>
+        </div>
+
+
+        
+
+
+            <div style="display:block; clear: both; margin-bottom: 100px; color:white;">
+                <h1>🚄🚄🚄结语</h1>
+                <p>
+                    作为现代工业科技集成创新的产物，高速铁路的发展得益于材料科学、力学结构、机械加工和电子电力等诸多领域的科技进步，堪称人类智慧的结晶。源于对速度与梦想的追求，得益于科技与管理的进步，高速铁路的发展不仅使铁路行业告别了“夕阳产业”的论断，更彻底缩短了人类社会的时空距离，增进了人们互联互通的便利，重塑了世界交通发展的新格局。<br>而在世界高速铁路的发展过程中，我国高速铁路从无到有，从追赶到领跑，是立足民生、自主创新的成功范例，是“中国装备制造一张亮丽的名片”。
+                </p>
+                <h2>参考文献</h2>
+                <p style=" padding-top: 10px;font-size:18px">1. UIC. ATLAS High-Speed Rail 2022[R]. 国际铁路联盟, 2022.
+                    <br>2. 罗春晓. 世界高速列车图鉴[M]. 北京:中国铁道出版社有限公司, 2020.
+                    <br>3. 罗春晓. 中国高铁动车组巡览[M]. 北京:中国铁道出版社有限公司, 2022.
+                    <br>4. UIC. High-speed around the World 2023[R]. 国际铁路联盟, 2023.
+                </p>
+                <h2>作者</h2>
+                <p style="padding-top: 10px;font-size:18px">🚄 戚小玉  铁路大数据研究与应用创新中心</p>
+                
+
+            </div>
+            <div style="width:100%; ">
+                <img src="img/banner2.png" style="width:100%;opacity:0.3"></img>
+            </div>
+        </div>
+
+
+
+
+        <script>
+            draw_mapbar();
+            draw_scatterbar();
+            draw_scatterbar();
+            draw_lineregression();
+            draw_Germany_hsr();
+            draw_France_hsr();
+            draw_Spain_hsr();
+            draw_Italy_hsr();
+            draw_UK_hsr();
+            draw_Japan_hsr();
+            draw_China_hsr();
+            draw_barstack();
+            draw_sankey();
+            draw_modelnetwork();
+            modelpaopao();
+            draw_radertime();
+            draw_trainpie();
+        </script>
+
+</body>
+
+</html>
