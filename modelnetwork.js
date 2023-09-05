@@ -8,7 +8,7 @@ var dom = document.getElementById('modelnetwork');
     var option;
 
     myChart.showLoading();
-$.get('./data/network.json', function (graph) {
+$.get('network.json', function (graph) {
   myChart.hideLoading();
   graph.nodes.forEach(function (node) {
     node.label = {
